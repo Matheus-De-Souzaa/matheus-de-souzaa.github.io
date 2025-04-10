@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>tzportfolio.com.br</title> <!-- Título da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS da página inicial -->
+</head>
+<body>
+    <!-- Div para as partículas -->
+    <div id="particles-js"></div>
+
+    <!-- Seu conteúdo principal -->
+    <div class="container">
+        <!-- Imagem de perfil -->
+        <img src="/Projeto/8ff5ec2a1cd86afbf589b3c02fd11876.jpg" class="profile-pic" alt="Foto de Perfil">
+        <h1>Gomes DEV</h1> <!-- Nome exibido -->
+
+        <!-- Links com ícones para redes sociais -->
+        <div class="links">
+            <a href="/Projeto/portfolio/portfolio.html" target="_blank"> <!-- Link atualizado para a página do portfólio -->
+                <img src="/Projeto/image/github.png" alt="portfolio" class="social-icon"> Portfólio
+            </a>
+            <a href="https://instagram.com/seuusuario" target="_blank">
+                <img src="/Projeto/image/image.png" alt="Instagram" class="social-icon"> Instagram
+            </a>
+            <a href="https://linkedin.com/seuusuario" target="_blank">
+                <img src="/Projeto/image/174857.png" alt="LinkedIn" class="social-icon"> LinkedIn
+            </a>
+        </div>
+    </div>
+
+    <!-- Incluir a biblioteca particles.js (colocada no mesmo diretório do arquivo HTML) -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+    <!-- Carregar a configuração diretamente -->
+    <script>
+        particlesJS.load('particles-js', 'particlesjs-config.json', function() {
+            console.log('Configuração de partículas carregada');
+        });
+    </script>
+</body>
+</html>

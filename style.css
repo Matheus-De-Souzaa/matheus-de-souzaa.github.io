@@ -1,0 +1,86 @@
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+body {
+    background-color: #121212; /* Fundo preto */
+    color: white; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte utilizada */
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da viewport */
+}
+
+.container {
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+.profile-pic {
+    width: 150px;  /* Largura da imagem de perfil */
+    height: 150px; /* Altura da imagem de perfil */
+    border-radius: 50%;  /* Deixa a imagem circular */
+    object-fit: cover;   /* Cobre o espaço da imagem */
+    border: 2px solid #fff; /* Borda branca */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    display: block; /* Exibe como bloco */
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho do título */
+    margin-bottom: 10px; /* Margem inferior do título */
+}
+
+.links a {
+    display: flex; /* Usar flexbox para alinhar ícone e texto */
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin: 10px 0; /* Margem vertical entre os links */
+    padding: 10px; /* Preenchimento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.links a:hover {
+    background-color: #333333; /* Cor de fundo ao passar o mouse */
+    color: #ff6347; /* Troca de cor ao passar o mouse */
+}
+
+.social-icon {
+    width: 24px; /* Tamanho do ícone */
+    height: 24px; /* Tamanho do ícone */
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+}
+
+/* Estilo para o fundo de partículas */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Mantém as partículas no fundo */
+    background-color: #000000; /* Cor de fundo vermelha, que você escolheu */
+}
+
+/* Certifique-se de que o conteúdo principal fica visível acima das partículas */
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 100px; /* Para afastar um pouco o conteúdo do topo */
+}
+
+/* Ajustar a imagem de perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
