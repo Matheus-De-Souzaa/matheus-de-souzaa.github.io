@@ -1,0 +1,596 @@
+/* Estilo básico da página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Cor de fundo inicial */
+    cursor: default;
+}
+
+/* Fundo metade branco e metade preto */
+.intro {
+    height: 100vh; /* Altura da parte branca */
+    background-image: url('/Projeto/portfolio/css/imagem/background.svg');
+    background-size: cover; /* Faz com que a imagem cubra toda a área da seção */
+    background-position: center; /* Centraliza a imagem */
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha à esquerda */
+    padding-left: 40px; /* Espaçamento da esquerda */
+    margin-bottom: 12rem;
+}
+
+
+/* Ajuste de tamanho de fonte para destaque */
+.intro h2 {
+    font-size: 4.5em; 
+    margin: 0;
+}
+
+.intro h1 {
+    font-size: 5em; /* Mantém o tamanho de fonte para "Matheus Souza" */
+    font-weight: bold;
+    margin: 0;
+    color: #C0C0C0; /* Cor prata */
+    
+}
+
+.intro h3 {
+    font-size: 3.5em; /* Tamanho de fonte para "Software Engineer" */
+    margin: 0;
+    color: #666666; /* Cor cinza para contraste */
+}
+
+main {
+    height: 100vh; /* Altura para ocupar metade da tela */
+    background-color: black; /* Parte inferior em preto */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para a borda preta fixa no topo */
+.top-border {
+    position: fixed; /* Fixa na parte superior */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total da tela */
+    background-color: black; /* Fundo preto */
+    z-index: 5; /* Garante que fique acima de outros elementos */
+    padding: 10px 40px; /* Espaçamento interno para a borda */
+    display: flex; /* Organiza o título e o menu em linha */
+    justify-content: space-between; /* Título à esquerda e menu à direita */
+    align-items: center; /* Alinha verticalmente os itens */
+}
+
+.top-border a:last-child{
+    margin-right: 100px;
+}
+
+.top-border h1 {
+    margin: 0; /* Remove margens */
+    color: #C0C0C0; /* Cor do texto prata */
+}
+
+/* Estilo para o menu à direita da borda preta */
+.menu {
+    display: flex; /* Deixa os links em linha */
+    gap: 20px; /* Espaçamento entre os links */
+    padding-right: 40px; /* Aumenta o espaço para evitar corte */
+}
+
+.menu a {
+    color: #C0C0C0; /* Cor prata para os links */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    transition: color 0.3s; /* Transição de cor ao passar o mouse */
+}
+
+.menu a:hover {
+    color: #ffffff; /* Cor branca ao passar o mouse */
+}
+.about-content{
+    display: flex;
+}
+/* Estilo para a seção "Sobre Mim" */
+.about {
+    
+    flex-direction: row;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: flex-start; /* Alinha verticalmente no topo */
+    
+    background-color: black; /* Fundo preto */
+    color: silver; /* Cor do texto */
+    padding: 20px; /* Adiciona padding para espaçamento */
+    margin-bottom: 12rem;
+}
+
+
+
+.image-about{
+ 
+    width: 100%;
+}
+.Cursando em Análise e Desenvolvimento de Sistemas{
+    display: flex;
+    justify-content: flex-end; /* Alinha os itens à direita */
+    align-items: flex-start; /* Alinha verticalmente no topo */
+    height: 50vh; /* Mantém a altura total da viewport */
+    background-color: black; /* Fundo preto */
+    color: silver; /* Cor do texto */
+    padding: 20px; /* Adiciona padding para espaçamento */
+}
+.perfil {
+    display: flex;
+    flex-direction: column; /* Organiza texto e lista em coluna */
+    align-items: start; /* Alinha à direita */
+    width: 100%; /* Utiliza toda a largura disponível */
+    text-align: justify;
+    margin-top: 8%;
+}
+
+.texto {
+    max-width: 500px; /* Limita a largura do texto para legibilidade */
+}
+
+.experiencias {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding da lista */
+    margin: 0; /* Remove margem da lista */
+    align-self: flex-start; /* Alinha a lista no topo */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+.experiencias li{
+
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.image-about img{
+
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 60px; /* Espaço entre a imagem e o texto */
+    max-width: 300px; /* Limita a largura para não ficar muito espalhado */
+    margin: 0 auto; /* Centraliza na página */
+}
+
+.contact-icon{
+    text-align: end;
+}
+
+.contact-icon a:last-child{
+    
+    margin-right: 10%;
+}
+
+.contact-icon a img{
+    background-color: #666666;
+    border-radius: 50%;
+    margin: 10px;
+    width: 6%;
+    -webkit-transition: -webkit-transform 0.8s ease;
+    transition: transform 0.8s ease;
+
+}
+
+.contact-icon a img:hover{
+    background-color: #C0C0C0;
+    transition: 0.5s;
+    cursor: pointer;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #f0f0f0, #a0a0a0); /* Gradiente prateado */
+    background-clip: text; /* Adiciona a propriedade padrão */
+    -webkit-background-clip: text; /* Garante compatibilidade com WebKit */
+    -webkit-text-fill-color: transparent; /* Mantém o texto transparente */
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3); /* Sombra suave */
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 span {
+   
+    font-size: 2rem; /* Ajusta o tamanho do emoji */
+    margin-left: 10px; /* Espaço entre o texto e o emoji */
+  }
+  
+h1:hover {
+    text-shadow: 0 0 15px rgba(245, 245, 245, 0.856), 0 0 30px rgba(255, 255, 255, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+  }
+
+  h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #f0f0f0, #a0a0a0); /* Gradiente prateado */
+    background-clip: text; /* Adiciona a propriedade padrão */
+    -webkit-background-clip: text; /* Garante compatibilidade com WebKit */
+    -webkit-text-fill-color: transparent; /* Mantém o texto transparente */
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.3); /* Sombra suave */
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: #0f0f0f; /* Aplica cor preta ao emoji de livro */
+    font-size: rem; /* Ajusta o tamanho do emoji */
+    margin-left: 10px; /* Espaço entre o texto e o emoji */
+  }
+  
+h2:hover {
+    text-shadow: 0 0 15px rgba(245, 245, 245, 0.856), 0 0 30px rgba(255, 255, 255, 0.4);
+    transition: text-shadow 0.3s ease-in-out;
+  }
+
+
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    width: 200px; /* Tamanho da imagem */
+    height: 200px; /* Tamanho da imagem */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-Js {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.tooltip-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Tamanho igual ao da imagem */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow-y: auto; /* Habilita a rolagem vertical */
+}
+
+.tooltip:hover .img-Js {
+    filter: brightness(40%);
+}
+
+.tooltip:hover .tooltip-text {
+    opacity: 1;
+}
+
+/* Ajuste o conteúdo para garantir a rolagem sem ultrapassar os limites */
+.tooltip-text p {
+    max-height: 500px; /* Altura máxima para o texto */
+    overflow-y: auto; /* Habilita a rolagem */
+    margin: 0;
+    
+}
+
+.img-Js {
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 200px;
+    object-fit: cover; /* Mantém a proporção e corta o excesso */
+    border-radius: 10px; /* Borda levemente arredondada (opcional) */
+}
+
+.skill-content{
+    display: flex;
+    padding: 4rem 1rem;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+
+.presentation {
+    max-width: 50%;
+    margin: 50px auto;
+    padding: 3rem;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 12rem;
+}
+
+
+
+.presentation p {
+    margin-bottom: 15px;
+}
+
+.presentation strong {
+    color: #ffcc00;
+}
+
+.presentation::before {
+    content: "📚";
+    font-size: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.projeto-card {
+    width: 300px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 15px;
+}
+
+.projeto-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.projeto-info {
+    padding: 15px;
+}
+
+.projeto-info h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.projeto-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.projeto-info a {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.projeto-info a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.projetos{
+    margin-bottom: 12rem;
+}
+
+.projetos-texto {
+    max-width: 55%;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: #333;
+   
+  }
+  
+.projects{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    position: relative;
+}
+
+.projects img{
+    width: 800px;
+    height: 400px;
+    
+}
+
+.projects-container{
+
+    position: absolute;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    width: 39%;
+    padding: 2rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.buttons a{
+    padding: 1rem;
+    background-color: #7703fc;
+    width: 50px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: bold;
+    font-weight: 600;
+    cursor: pointer;
+    
+    
+}
+
+.buttons a:hover{
+    background-color: #9a42ff;
+}
+
+.img-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  .img-animada {
+    
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    width: 300px; /* ou o tamanho que preferir */
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .img-wrapper::before,
+  .img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #7703fc;
+    box-sizing: border-box;
+    animation: borderAnimation 6s linear infinite;
+    z-index: 0;
+  }
+  
+  .img-wrapper::after {
+    animation-delay: 3s;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    25% {
+      clip-path: inset(0 0 100% 0);
+    }
+    50% {
+      clip-path: inset(100% 0 0 0);
+    }
+    75% {
+      clip-path: inset(0 0 0 100%);
+    }
+    100% {
+      clip-path: inset(0 100% 0 0);
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+
+    body{
+        font-size: 80%;
+    }
+
+    .intro{
+        text-align: center;
+        align-items: center;
+        margin-top: 20%;
+    }
+
+    .top-border {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+
+    .top-border h1{
+        margin-right: 10%;
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      
+    }
+
+    .menu a{
+        text-align: center;
+    }
+
+    .menu a:last-child{
+        margin-right: 0;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-about img {
+      width: 80%;
+      max-width: 300px;
+    }
+  
+    .skill-content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .tooltip {
+     
+      margin: 10px;
+    }
+  
+    .projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .img-wrapper img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .projects-container {
+      width: 90%;
+      padding: 10px;
+      text-align: center;
+      bottom: 0;
+    }
+
+    .contact-icon a img{
+        width: 20%;
+    }
+
+    .presentation{
+        margin: auto;
+    }
+  }
